@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				vazir: ['Vazirmatn', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,16 +55,27 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Custom Multi Link Proxy colors
+				teal: {
+					DEFAULT: 'hsl(var(--teal-accent))',
+					hover: 'hsl(var(--teal-accent-hover))'
+				},
+				success: 'hsl(var(--success))',
+				info: 'hsl(var(--info))',
+				bulk: 'hsl(var(--bulk-info))',
+				output: 'hsl(var(--output))',
+				// Toast system colors
+				toast: {
+					error: 'hsl(var(--toast-error))',
+					success: 'hsl(var(--toast-success))',
+					info: 'hsl(var(--toast-info))',
+					bulk: 'hsl(var(--toast-bulk))',
+					output: 'hsl(var(--toast-output))'
 				}
+			},
+			backgroundImage: {
+				'gradient-brand': 'var(--gradient-brand)',
+				'gradient-brand-subtle': 'var(--gradient-brand-subtle)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
