@@ -104,9 +104,8 @@
     --toast-info: 210 60% 50%;
     --toast-bulk: 180 55% 50%;
     --toast-output: 270 55% 55%;
-}
+  }
 
-@layer base {
   * {
     @apply border-border;
   }
