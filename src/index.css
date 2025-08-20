@@ -40,70 +40,70 @@
     
     --radius: 8px;
     
-    /* Custom tokens for Multi Link Proxy */
-    --gradient-brand: linear-gradient(135deg, hsl(240 60% 60%), hsl(280 60% 65%));
-    --gradient-brand-subtle: linear-gradient(135deg, hsl(240 40% 25%), hsl(280 40% 30%));
-    --teal-accent: 180 70% 50%;
-    --teal-accent-hover: 180 70% 55%;
-    --success: 142 70% 50%;
-    --info: 210 70% 55%;
-    --bulk-info: 180 65% 55%;
-    --output: 270 65% 60%;
+    /* Enhanced Multi Link Proxy gradients and colors */
+    --gradient-brand: linear-gradient(135deg, hsl(195 85% 60%), hsl(240 80% 65%));
+    --gradient-brand-subtle: linear-gradient(135deg, hsl(195 60% 35%), hsl(240 60% 40%));
+    --teal-accent: 195 85% 55%;
+    --teal-accent-hover: 195 85% 60%;
+    --success: 142 75% 55%;
+    --info: 210 75% 60%;
+    --bulk-info: 195 70% 60%;
+    --output: 270 70% 65%;
     
-    /* Toast system colors */
-    --toast-error: 0 75% 60%;
-    --toast-success: 142 70% 50%;
-    --toast-info: 210 70% 55%;
-    --toast-bulk: 180 65% 55%;
-    --toast-output: 270 65% 60%;
+    /* Enhanced toast system colors */
+    --toast-error: 0 80% 65%;
+    --toast-success: 142 75% 55%;
+    --toast-info: 210 75% 60%;
+    --toast-bulk: 195 70% 60%;
+    --toast-output: 270 70% 65%;
   }
 
   .paper {
-    /* Paper Theme - Cream/Paper aesthetic */
-    --background: 45 25% 95%;
-    --foreground: 25 15% 25%;
+    /* Gentle Paper Theme - Soft and comfortable */
+    --background: 50 30% 96%;
+    --foreground: 220 15% 30%;
     
-    --card: 0 0% 98%;
-    --card-foreground: 25 15% 20%;
+    --card: 50 20% 98%;
+    --card-foreground: 220 15% 25%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 25 15% 20%;
+    --popover-foreground: 220 15% 25%;
     
-    --primary: 25 20% 35%;
-    --primary-foreground: 45 25% 95%;
+    --primary: 220 25% 40%;
+    --primary-foreground: 50 30% 96%;
     
-    --secondary: 45 15% 88%;
-    --secondary-foreground: 25 15% 25%;
+    --secondary: 50 15% 92%;
+    --secondary-foreground: 220 15% 30%;
     
-    --muted: 45 10% 90%;
-    --muted-foreground: 25 8% 45%;
+    --muted: 50 12% 94%;
+    --muted-foreground: 220 10% 50%;
     
-    --accent: 45 15% 85%;
-    --accent-foreground: 25 15% 25%;
+    --accent: 50 15% 90%;
+    --accent-foreground: 220 15% 30%;
     
-    --destructive: 0 70% 55%;
-    --destructive-foreground: 45 25% 95%;
+    --destructive: 0 65% 60%;
+    --destructive-foreground: 50 30% 96%;
     
-    --border: 45 10% 82%;
-    --input: 45 10% 85%;
-    --ring: 25 20% 35%;
+    --border: 50 10% 86%;
+    --input: 50 10% 90%;
+    --ring: 220 25% 40%;
     
-    /* Keep brand gradient for visual identity */
-    --gradient-brand: linear-gradient(135deg, hsl(240 60% 60%), hsl(280 60% 65%));
-    --gradient-brand-subtle: linear-gradient(135deg, hsl(240 50% 85%), hsl(280 50% 88%));
-    --teal-accent: 180 60% 45%;
-    --teal-accent-hover: 180 60% 40%;
-    --success: 142 60% 45%;
-    --info: 210 60% 50%;
-    --bulk-info: 180 55% 50%;
-    --output: 270 55% 55%;
+    /* Softer brand gradient for light theme */
+    --gradient-brand: linear-gradient(135deg, hsl(240 50% 65%), hsl(280 50% 70%));
+    --gradient-brand-subtle: linear-gradient(135deg, hsl(240 40% 90%), hsl(280 40% 92%));
+    --teal-accent: 180 50% 50%;
+    --teal-accent-hover: 180 50% 45%;
+    --success: 142 50% 50%;
+    --info: 210 50% 55%;
+    --bulk-info: 180 45% 55%;
+    --output: 270 45% 60%;
     
-    /* Toast system colors for paper theme */
-    --toast-error: 0 70% 55%;
-    --toast-success: 142 60% 45%;
-    --toast-info: 210 60% 50%;
-    --toast-bulk: 180 55% 50%;
-    --toast-output: 270 55% 55%;
+    /* Gentler toast colors for paper theme */
+    --toast-error: 0 65% 60%;
+    --toast-success: 142 50% 50%;
+    --toast-info: 210 50% 55%;
+    --toast-bulk: 180 45% 55%;
+    --toast-output: 270 45% 60%;
   }
 
   * {

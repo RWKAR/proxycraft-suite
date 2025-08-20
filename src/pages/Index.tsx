@@ -14,15 +14,23 @@ interface ProcessedLink {
 const Index = () => {
   const [processedLinks, setProcessedLinks] = useState<ProcessedLink[]>([]);
 
+  // Base64 encoding/decoding functions (based on CF_Download_Proxy logic)
+  const toBase64 = (str: string): string => {
+    return btoa(unescape(encodeURIComponent(str)));
+  };
+
   const generateProxyLinks = (links: string[]) => {
-    // Simulate link processing
     const processed = links.map((link, index) => {
       const filename = extractFilename(link) || `file-${index + 1}`;
+      
+      // Create encoded data like the Cloudflare Worker
+      const encodedData = toBase64(JSON.stringify({ url: link, filename }));
+      
       return {
         original: link,
         filename,
-        cdnUrl: `https://cdn.ir/proxy/${encodeURIComponent(link)}`,
-        cloudflareUrl: `https://cloudflare-proxy.com/v1/${encodeURIComponent(link)}`,
+        cdnUrl: `https://nimbaha.ir.cdn.ir/dl/${encodedData}`,
+        cloudflareUrl: `https://cf-proxy.example.com/dl/${encodedData}`,
       };
     });
 
